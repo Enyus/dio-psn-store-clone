@@ -1,0 +1,36 @@
+.header__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav--icone {
+    padding: 2rem 0;
+}
+
+.header__nav--icone img {
+    height: 3rem;
+}
+
+.header__nav--lista {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.header__nav--item {
+    font-size: 1.5rem;
+    border-radius: 999px;
+    padding: 0.2rem 0.8rem;
+    background-color: var(--light-gray);
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header__nav--icone {
+        margin-right: 2rem;
+    }
+}

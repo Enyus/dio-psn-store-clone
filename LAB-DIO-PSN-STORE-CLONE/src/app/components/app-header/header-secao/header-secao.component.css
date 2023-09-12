@@ -1,0 +1,37 @@
+.header__secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__secao--icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+}
+
+.fa-icon {
+    height: 2.1rem;
+}
+
+.header__secao--button {
+    color: var(--primary-white);
+    background-color: var(--primary-blue);
+    font-weight: 500;
+    padding: 0.2rem 0.8rem;
+    height: fit-content;
+    font-size: 1.5rem;
+    border-radius: 999px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__secao--icone.menu {
+        display: none;
+    }
+
+    .header__secao--icone.search {
+        order: 10;
+    }
+}

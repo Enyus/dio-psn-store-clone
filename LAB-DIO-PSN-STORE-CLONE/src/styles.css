@@ -1,0 +1,18 @@
+@import url('./assets/stylesheets/reset.css');
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    font-size: 10px;
+    --primary-black: #000;
+    --primary-white: #fff;
+    --light-gray: #EBEEF0;
+    --dark-gray: #2C2C2C;
+    --primary-blue: #0070CC;
+}
+
+body {
+    background-color: var(--primary-white);
+}
