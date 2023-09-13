@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .header__secao--icone {
@@ -14,6 +16,26 @@
 
 .fa-icon {
     height: 2.1rem;
+}
+
+.header__secao--list {
+    display: none;
+}
+
+.header__secao--item {
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.header__secao--item::after {
+    content: "";
+    background-image: url(../../../../assets/fa-chevron-down.svg);
+    display: inline-flex;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.4rem;
+    background-size: cover;
 }
 
 .header__secao--button {
@@ -33,5 +55,11 @@
 
     .header__secao--icone.search {
         order: 10;
+    }
+
+    .header__secao--list {
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
     }
 }

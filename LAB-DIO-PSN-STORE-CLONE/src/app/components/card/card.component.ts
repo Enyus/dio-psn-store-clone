@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'card',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-
+  @Input() gameName:string = 'Nome do Jogo';
+  @Input() gameCover:string = 'URL da Capa do Jogo';
+  @Input() gamePrice:string = 'R$ XX,xx'
 }

@@ -1,5 +1,20 @@
-<app-header></app-header>
-
-<card></card>
-
-<router-outlet></router-outlet>
+<div class="container">
+    <app-header></app-header>
+    
+    <div class="cards__container">
+        <card
+            *ngFor="let game of games"
+            [gameCover]="game.cover"
+            [gameName]="game.gameName"
+            [gamePrice]="game.price"
+        ></card>
+    </div>
+    
+    <app-footer></app-footer>
+    
+    <div class="sony_logo--container">
+        <img src="../assets/sony_logo.svg" alt="Logo da Sony" class="sony_logo">
+    </div>
+    
+    <router-outlet></router-outlet>
+</div>

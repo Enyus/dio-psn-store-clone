@@ -9,10 +9,16 @@
     --primary-black: #000;
     --primary-white: #fff;
     --light-gray: #EBEEF0;
-    --dark-gray: #2C2C2C;
+    --dark-gray: #6b6b6b;
     --primary-blue: #0070CC;
 }
 
 body {
     background-color: var(--primary-white);
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
 }

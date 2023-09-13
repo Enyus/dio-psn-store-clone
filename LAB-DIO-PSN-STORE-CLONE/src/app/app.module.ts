@@ -7,6 +7,7 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
 import { CardComponent } from './components/card/card.component';
 import { HeaderSecaoComponent } from './components/app-header/header-secao/header-secao.component';
 import { HeaderNavComponent } from './components/app-header/header-nav/header-nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderNavComponent } from './components/app-header/header-nav/header-na
     AppHeaderComponent,
     CardComponent,
     HeaderSecaoComponent,
-    HeaderNavComponent
+    HeaderNavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

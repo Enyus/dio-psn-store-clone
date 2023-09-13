@@ -1,0 +1,41 @@
+.cover__container {
+    width: 132px;
+    height: 132px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.game__cover {
+    width: 100%;
+}
+
+.cover__container span {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.1rem 0.5rem;
+    background-color: var(--dark-gray);
+    color: var(--primary-white);
+    border: solid 1px var(--primary-white);
+    opacity: 0.8;
+}
+
+.card__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.card__price {
+    font-size: 1.4rem;
+    color: var(--dark-gray);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .cover__container {
+        width: 220px;
+        height: 220px;
+    }
+}
